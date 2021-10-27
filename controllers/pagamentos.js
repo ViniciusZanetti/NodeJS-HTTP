@@ -1,6 +1,6 @@
 const app = require("../config/custom-express")()
 
-module.exports = function(app){
+
     app.get('/pagamentos', (req, res) => {
         res.send('Rota de pagamentos')
     })
@@ -10,7 +10,7 @@ module.exports = function(app){
         console.log(pagamento)
         res.send('OK')
     })
-}
+
 
 
 
